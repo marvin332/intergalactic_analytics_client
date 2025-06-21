@@ -1,0 +1,18 @@
+.dropzone {
+    width: 100%;
+    height: 239px;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+}
+.uploaded {
+    border: 1px solid var(--primary-text-color);
+    /*background: none;*/
+    background-color: var(--primary-color);
+}
+.active {
+    background-color: var(--secondary-sucess-color);
+}
+

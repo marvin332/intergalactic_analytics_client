@@ -1,0 +1,35 @@
+.base {
+    padding: 0 27px;
+    height: 80px;
+    font-size: 35px;
+    font-weight: 500;
+    border-radius: 25px;
+    border: none;
+}
+
+.active {
+    background-color: var(--primary-success-color);
+    cursor: pointer;
+}
+
+.unactive {
+    background-color: var(--disabled-color);
+    color: var(--disabled-text-color);
+
+}
+
+.download {
+    background-color: var(--warning-color);
+    cursor: pointer;
+}
+
+.clear {
+    background-color: var(--clear-color);
+    color: var(--secondary-background-color);
+    cursor: pointer;
+}
+
+.remove {
+    background-color: var(--secondary-background-color);
+    cursor: pointer;
+}

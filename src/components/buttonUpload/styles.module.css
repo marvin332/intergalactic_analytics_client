@@ -1,0 +1,62 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.file {
+    display: none;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.close {
+    height: 70px;
+    width: 70px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--clear-color);
+    cursor: pointer;
+}
+
+.base {
+    padding: 15px 27px;
+    min-height: 70px;
+    border-radius: 10px;
+    border: none;
+    min-width: 331px;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.message {
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.active {
+    background-color: var(--secondary-background-color);
+    cursor: pointer;
+}
+
+.process {
+    background-color: var(--accent-color);
+}
+
+.parsing {
+    background-color: var(--accent-color);
+}
+
+.done {
+    background-color: var(--secondary-sucess-color);
+}
+
+.error {
+    color: var(--secondary-background-color);
+    background-color: var(--error-color);
+}
