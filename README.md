@@ -41,11 +41,7 @@
    ```bash
    npm install
    ```
-3. Создайте файл `.env` на основе примера:
-   ```bash
-   cp .env .env.local
-   ```
-4. Запустите dev-сервер:
+3. Запустите dev-сервер:
    ```bash
    npm run dev
    ```
