@@ -24,10 +24,14 @@ export const HighLights: React.FC<Props> = (props) => {
           <div className={`${classes.main} ${props.isMain ? "" : classes.col}`}>
                <Cell
                     isMain={props.isMain}
-                    title={total_spend_galactic.toString()}
+                    title={Math.floor(total_spend_galactic).toString()}
                     body={"общие расходы в галактических кредитах"}
                />
-               <Cell isMain={props.isMain} title={rows_affected.toString()} body={"количество обработанных записей"} />
+               <Cell
+                    isMain={props.isMain}
+                    title={Math.floor(rows_affected).toString()}
+                    body={"количество обработанных записей"}
+               />
                <Cell
                     isMain={props.isMain}
                     title={dayOfYearToDate(less_spent_at)}
@@ -42,12 +46,12 @@ export const HighLights: React.FC<Props> = (props) => {
                />
                <Cell
                     isMain={props.isMain}
-                    title={big_spent_value.toString()}
+                    title={Math.floor(big_spent_value).toString()}
                     body={"максимальная сумма расходов за день "}
                />
                <Cell
                     isMain={props.isMain}
-                    title={average_spend_galactic.toString()}
+                    title={Math.floor(average_spend_galactic).toString()}
                     body={"средние расходы в галактических кредитах"}
                />
           </div>
