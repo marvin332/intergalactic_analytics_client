@@ -12,11 +12,8 @@ function dayOfYearToDate(dayNumber: number): string {
           throw new RangeError("dayNumber должен быть ≥ 0");
      }
 
-     // Используем непривязанный к году расчёт:
-     // 0 → 1 января, 1 → 2 января, …, 364 → 31 декабря, 365+ → 31 декабря
      const ordinal = Math.min(dayNumber + 1, 365);
 
-     // Берём условный невисокосный год, чтобы не было смещения февраля
      const year = 2021;
      const date = new Date(year, 0); // 1 января этого года
      date.setDate(ordinal);
