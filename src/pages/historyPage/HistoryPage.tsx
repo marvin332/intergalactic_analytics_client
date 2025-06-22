@@ -1,6 +1,6 @@
-import { History } from "../../components/history/History.tsx";
-import { Button } from "../../components/button/Button.tsx";
-import { useStore } from "../../store";
+import { History } from "../../features/history/UI/history/History.tsx";
+import { Button } from "../../shared/button/Button.tsx";
+import { useStore } from "../../app/store";
 import classes from "./styles.module.css";
 import { useNavigate } from "react-router-dom";
 

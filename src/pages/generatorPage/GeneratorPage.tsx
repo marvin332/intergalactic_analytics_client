@@ -1,4 +1,4 @@
-import { Generator } from "../../components/generator/Generator.tsx";
+import { Generator } from "../../features/generator/UI/generator/Generator.tsx";
 import classes from "./styles.module.css";
 export const GeneratorPage = () => {
      return (
