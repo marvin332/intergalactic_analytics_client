@@ -15,7 +15,7 @@ function dayOfYearToDate(dayNumber: number): string {
      const ordinal = Math.min(dayNumber + 1, 365);
 
      const year = 2021;
-     const date = new Date(year, 0); // 1 января этого года
+     const date = new Date(year, 0);
      date.setDate(ordinal);
 
      const day = date.getDate();
